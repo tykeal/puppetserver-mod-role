@@ -10,8 +10,5 @@ class role {
   include profile::rkhunter
   include profile::smtp
   include profile::ssh::server
-  include profile::sudo
   include profile::sysctl
-  include profile::users::common
-  include profile::users::root
 }
