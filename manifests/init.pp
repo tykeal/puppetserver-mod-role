@@ -12,6 +12,7 @@ class role {
   include profile::ssh::server
   include profile::sudo
   include profile::sysctl
+  include profile::timezone
   include profile::vim
 
   # load profiles needed for lfcore
