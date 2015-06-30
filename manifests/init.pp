@@ -4,6 +4,7 @@
 class role {
   include profile::external_facts
   include profile::firewall
+  include profile::ntp
   include profile::puppetlabsrepo
   include profile::puppet::agent
   include profile::resolv_conf
