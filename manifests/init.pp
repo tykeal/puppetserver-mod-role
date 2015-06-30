@@ -2,6 +2,7 @@
 # _ONLY_ the most basic system profiles that all systems get
 # go here
 class role {
+  include profile::bacula::client
   include profile::external_facts
   include profile::firewall
   include profile::ntp
@@ -16,6 +17,7 @@ class role {
   include profile::sysctl
   include profile::timezone
   include profile::vim
+
 
   # load profiles needed for lfcore
   if hiera('lfcorehost', false) {
