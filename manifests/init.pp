@@ -7,6 +7,7 @@ class role {
   include profile::firewall
   include profile::nagios::client
   include profile::ntp
+  include profile::pam
   include profile::puppetlabsrepo
   include profile::puppet::agent
   include profile::resolv_conf
