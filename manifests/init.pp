@@ -20,10 +20,12 @@ class role {
   include profile::timezone
   include profile::vim
 
-
   # load profiles needed for lfcore
   if hiera('lfcorehost', false) {
     include profile::users::common
     include profile::users::root
+  } else {
+    include profile::totp::client
   }
+
 }
