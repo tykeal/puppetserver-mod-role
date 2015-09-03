@@ -28,4 +28,9 @@ class role {
     include profile::totp::client
   }
 
+  # load profile for GCE
+  if hiera('gcehost', false) {
+    include profile::gce
+  }
+
 }
