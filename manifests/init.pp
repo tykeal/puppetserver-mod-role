@@ -12,6 +12,7 @@ class role {
   include profile::puppet::agent
   include profile::resolv_conf
   include profile::rkhunter
+  include profile::rsyslog::client
   include profile::screen
   include profile::smtp
   include profile::ssh::server
