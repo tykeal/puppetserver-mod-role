@@ -6,6 +6,7 @@ class role {
   include profile::bacula::client
   include profile::external_facts
   include profile::firewall
+  include profile::hardware
   include profile::nagios::client
   include profile::ntp
   include profile::pam
