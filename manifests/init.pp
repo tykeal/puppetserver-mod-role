@@ -16,6 +16,7 @@ class role {
   include profile::rkhunter
   include profile::rsyslog::client
   include profile::screen
+  include profile::selinux
   include profile::smtp
   include profile::ssh::server
   include profile::sudo
