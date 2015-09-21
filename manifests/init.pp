@@ -39,4 +39,10 @@ class role {
     include profile::gce
   }
 
+
+  # hiera driven custom profile / class loads
+  $custom_profiles = hiera_array('custom_profiles', undef)
+  if ($custom_profiles) {
+    hiera_include('custom_profiles')
+  }
 }
