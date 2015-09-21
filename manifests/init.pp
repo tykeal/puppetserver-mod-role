@@ -23,6 +23,7 @@ class role {
   include profile::sysctl
   include profile::timezone
   include profile::vim
+  include profile::shellenv
 
   # load profiles needed for lfcore
   if hiera('lfcorehost', false) {
