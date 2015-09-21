@@ -7,13 +7,11 @@ class role {
   include profile::external_facts
   include profile::firewall
   include profile::hardware
-  include profile::mcollective
   include profile::nagios::client
   include profile::ntp
   include profile::pam
   include profile::puppetlabsrepo
   include profile::puppet::agent
-  include profile::rabbitmq
   include profile::resolv_conf
   include profile::rkhunter
   include profile::rsyslog::client
