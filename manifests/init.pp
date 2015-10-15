@@ -2,6 +2,7 @@
 # _ONLY_ the most basic system profiles that all systems get
 # go here
 class role {
+  include ::profile::admin
   include profile::auditd
   include profile::bacula::client
   include profile::external_facts
