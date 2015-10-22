@@ -1,3 +1,4 @@
-ass role::webserver::apache inherits role {
+class role::webserver::apache {
+  include ::profile::base
   include ::profile::apache
 }

@@ -1,3 +1,4 @@
-class role::jenkins::with_nginx inherits role::jenkins {
+class role::jenkins::with_nginx {
+  include ::profile::base
   include ::profile::nginx
 }

@@ -1,3 +1,4 @@
-class role::webserver::apache::php inherits role {
+class role::webserver::apache::php {
+  include ::profile::base
   include ::profile::apache::php
 }
