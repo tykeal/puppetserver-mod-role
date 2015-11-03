@@ -1,4 +1,5 @@
-class role::ovirt::node inherits role {
-  include profile::ovirt::node
+class role::ovirt::node {
+  include ::profile::base
+  include ::profile::ovirt::node
 }
 

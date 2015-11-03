@@ -1,3 +1,4 @@
-class role::nagiosserver inherits role {
+class role::nagiosserver {
+  include ::profile::base
   include ::profile::nagios::server
 }

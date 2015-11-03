@@ -1,3 +1,4 @@
-class role::puppetdb::server inherits role {
-  include profile::puppetdb::server
+class role::puppetdb::server {
+  include ::profile::base
+  include ::profile::puppetdb::server
 }

@@ -1,3 +1,4 @@
-class role::mysqlserver inherits role {
+class role::mysqlserver {
+  include ::profile::base
   include ::profile::mysql::server
 }

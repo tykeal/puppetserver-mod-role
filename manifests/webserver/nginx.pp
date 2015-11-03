@@ -1,3 +1,4 @@
-class role::webserver::nginx inherits role {
+class role::webserver::nginx {
+  include ::profile::base
   include ::profile::nginx
 }

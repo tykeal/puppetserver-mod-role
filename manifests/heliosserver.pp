@@ -1,3 +1,4 @@
-class role::heliosserver inherits role {
+class role::heliosserver {
+  include ::profile::base
   include ::profile::helios
 }

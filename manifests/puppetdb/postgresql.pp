@@ -1,3 +1,4 @@
-class role::puppetdb::postgresql inherits role {
-  include profile::puppetdb::postgresql
+class role::puppetdb::postgresql {
+  include ::profile::base
+  include ::profile::puppetdb::postgresql
 }
