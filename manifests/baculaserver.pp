@@ -1,4 +1,4 @@
-class baculaserver {
+class role::baculaserver {
   include ::profile::base
   include ::profile::bacula::director
   include ::profile::bacula::storage
